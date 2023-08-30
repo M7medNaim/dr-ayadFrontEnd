@@ -38,18 +38,19 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 :root {
-    --white:#fff;
-    --dark:#000;
+    --white: #fff;
+    --dark: #000;
     --scandry: #161D27;
-    --scandry-hr : #EBEBEB80;
-    --gold:#C18F59;
-    --text-gold1:#E1C478;
-    --text-gold2:#8B6A01;
-    --text-gold3:#CF9455;
+    --scandry-hr: #EBEBEB80;
+    --gold: #C18F59;
+    --text-gold1: #E1C478;
+    --text-gold2: #8B6A01;
+    --text-gold3: #CF9455;
     --bg-gold: #8B6A01;
-    --gold-dark:#AB8219;
-    --gold-op:#D1B06B;
+    --gold-dark: #AB8219;
+    --gold-op: #D1B06B;
 
 }
 
@@ -89,6 +90,7 @@ hr {
     height: 50px !important;
     width: 50px !important;
 }
+
 .svgIcon {
     height: 100px !important;
     width: 100px !important;
@@ -341,7 +343,7 @@ main .card .card-body .textSlider {
     line-height: 30px !important;
     text-align: justify;
     color: var(--dark) !important;
-    
+
 }
 
 .carousel-control-next-icon,
@@ -354,7 +356,7 @@ main .card .card-body .textSlider {
 .carousel-control-prev {
     width: 10%;
     opacity: 1;
-    
+
 }
 
 .carousel-control-prev {
@@ -362,11 +364,25 @@ main .card .card-body .textSlider {
     bottom: -100% !important;
 
 }
-.carousel-control-next{
+
+.carousel-control-next {
     right: -3% !important;
     bottom: -100% !important;
-    
+
 }
+
+@media screen and (max-width : 500px) {
+    .carousel-control-prev {
+        left: 0% !important;
+
+    }
+
+    .carousel-control-next {
+        right: 0% !important;
+
+    }
+}
+
 .homeControl {
     left: 0 !important;
     bottom: 0 !important;
@@ -377,20 +393,23 @@ main .card .card-body .textSlider {
     main {
         min-height: 80vh !important;
     }
+
     .svgIcon {
         height: 60px !important;
         width: 60px !important;
         padding-top: 10px;
     }
 }
+
 @media screen and (max-width:420px) {
     .carousel-control-prev {
         bottom: -80% !important;
-    
+
     }
-    .carousel-control-next{
+
+    .carousel-control-next {
         bottom: -80% !important;
-        
+
     }
 }
 
@@ -472,13 +491,16 @@ body {
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 }
+
 .inputModal::placeholder {
     color: #C4C4C4;
 }
+
 .inputModal:focus {
     border: 1px solid var(--gold-dark);
 
 }
+
 .inputModal:focus::placeholder {
     color: #333;
 }
@@ -488,7 +510,7 @@ body {
     padding: 15px 25px;
     color: var(--white);
     background: linear-gradient(270deg, var(--gold-dark) 0%, #CCAA60 100%),
-    linear-gradient(270deg, rgba(255, 255, 255, 0.175) 1.09%, rgba(0, 0, 0, 0.06) 100%);
+        linear-gradient(270deg, rgba(255, 255, 255, 0.175) 1.09%, rgba(0, 0, 0, 0.06) 100%);
 
 }
 
@@ -941,6 +963,7 @@ main.blog .mhkmaHigh p {
     text-align: justify;
     color: var(--scandry) !important;
 }
+
 main.blog .headText h1 {
     font-size: 95px !important;
     color: var(--white) !important;
@@ -960,7 +983,7 @@ main.blog .content .types {
     border-top: 3px solid var(--gold);
     background: rgba(53, 60, 78, 0.20);
     position: absolute;
-    bottom: 0;
+    bottom: -3%;
     width: 100%;
 }
 
@@ -1013,6 +1036,7 @@ footer.blog {
     main.blog .mhkmaHigh h1 {
         font-size: 70px !important;
     }
+
     main.blog .mhkmaHigh p {
         width: 95%;
     }
@@ -1023,6 +1047,7 @@ footer.blog {
     main.blog .mhkmaHigh h1 {
         font-size: 60px !important;
     }
+
     main.blog .mhkmaHigh p {
         width: 100%;
     }
@@ -1040,7 +1065,7 @@ footer.blog {
 
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:380px) {
     main.blog .content .types {
         position: relative;
     }
@@ -1095,6 +1120,7 @@ footer.mhkma {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 footer.mofadla {
     background-image: url(../image/mofdala/Group\ 65\ \(1\).png);
     background-repeat: no-repeat;
@@ -1109,6 +1135,7 @@ footer.mofadla {
 .fileIcon {
     height: 45px;
 }
+
 /* 
 --------------------------------------------------------
 ----------------------nyaba Page----------------------------------
@@ -1203,10 +1230,12 @@ footer.eliminateHigh {
     background-image: url(../image/eliminate/7658e5812519e9851b4e11a68a66d1a2\ 2.png);
     background-size: auto;
 }
+
 footer.mntka {
     background-image: url(../image/eliminate/Group\ 69.png);
     background-size: auto;
 }
+
 footer.ahkam {
     background-image: url(../image/eliminate/7658e5812519e9851b4e11a68a66d1a2\ 2.png);
     background-size: contain;
@@ -1252,6 +1281,7 @@ footer.cv {
     background-image: url(../image/cv/Group\ 66.png);
     background-size: auto !important;
 }
+
 @media screen and (max-width:578px) {
     main.cv section .description p {
         width: 100% !important;
@@ -1354,7 +1384,7 @@ main.islamyat .content .container h1 {
 main.islamyat .content .container p {
     color: var(--scandry) !important;
     font-size: 24px;
-    font-family: 'akkal Majalla' , sans-serif;
+    font-family: 'akkal Majalla', sans-serif;
     width: 80%;
 }
 
@@ -1448,6 +1478,7 @@ footer.artbook {
     background-image: url(../image/books/Group\ 37.png);
     background-size: auto;
 }
+
 footer.fullbook {
     background-image: url(../image/books/hmdllah.png);
     background-size: auto;
@@ -1810,14 +1841,17 @@ main.time {
     height: 100vh !important;
     overflow: hidden;
 }
+
 section.time h1 {
     font-size: 55px !important;
     font-weight: bolder;
 }
+
 section.time h1.num {
     font-size: 130px !important;
     font-weight: bolder;
 }
+
 section.time h4 {
     font-size: 50px !important;
     font-weight: bolder;
@@ -1828,15 +1862,18 @@ section.time h4 {
         font-size: 45px !important;
         font-weight: bolder;
     }
+
     section.time h1.num {
         font-size: 100px !important;
         font-weight: bolder;
     }
+
     section.time h4 {
         font-size: 40px !important;
         font-weight: bolder;
     }
 }
+
 /* scroll website */
 body::-webkit-scrollbar {
     width: 5px;
@@ -1875,9 +1912,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .lineHead {
-    width:90%;
+    width: 90%;
     height: 1px;
-    background-color: var(--scandry)!important;
+    background-color: var(--scandry) !important;
     position: absolute;
     top: 100px !important;
 }
@@ -1886,19 +1923,22 @@ body::-webkit-scrollbar-thumb {
     width: 100px;
     height: 100px;
 }
+
 @media screen and (max-width: 600px) {
     .iconLinkSvg {
         width: 70px;
         height: 70px;
     }
 }
+
 .modalFevoirt {
     width: 80% !important;
 }
+
 @media screen and (max-width:500px) {
     .modalFevoirt {
         width: 90% !important;
-        margin:auto;
+        margin: auto;
 
     }
 }

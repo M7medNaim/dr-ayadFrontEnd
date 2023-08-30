@@ -18,7 +18,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style link -->
-    <link rel="stylesheet" href="css/style.css"  id="theme-stylesheet">
+    <link rel="stylesheet" href="css/style.css" id="theme-stylesheet">
 </head>
 
 <body>
@@ -144,7 +144,7 @@
                         <div class="favorites">
                             <div id="favorites-count"></div>
                             <a href="mofdala.html" class="text-white">
-                                <i class="fa-regular fa-bookmark fs-4 me-5"></i>
+                                <i class="fa-regular fa-bookmark fs-4 me-2 me-md-5"></i>
                             </a>
                         </div>
                     </div>
@@ -723,7 +723,7 @@
                     </form>
 
                     <h4 class="mt-5">آخر موضوعات الفرع</h4>
-                    <div class="row bg-white fullbookTheme">
+                    <div class="row bg-white ">
                         <div class="col-12 border-bottom">
                             <div class="row align-items-center">
                                 <div class="col-8 text-black ">
@@ -876,8 +876,8 @@
                     <form action="" method="POST">
                         <input type="email" name="user_email" id="user_email" class="inputModal"
                             placeholder="بريدك الالكتروني ..." required>
-                        <button type="button" class="btn d-block m-auto mt-3 btnModal" data-bs-toggle="modal" data-bs-target="#subscribe2"><i
-                                class="fa-regular fa-envelope ms-2"></i>اشتراك</button>
+                        <button type="button" class="btn d-block m-auto mt-3 btnModal" data-bs-toggle="modal"
+                            data-bs-target="#subscribe2"><i class="fa-regular fa-envelope ms-2"></i>اشتراك</button>
                     </form>
                 </div>
             </div>
@@ -886,24 +886,26 @@
     <!-- modal success subscribe -->
     <div class="modal fade" id="subscribe2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered " role="document">
-            <div class="modal-content rounded-0" >
-              <div class="btnColse text-start ">
-                <button type="button" class="btn-close m-0 p-3 btnColseModal"  data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body text-center p-5" >
-                <h1 class="text-gold3 fw-normal">شكرًا</h1>
-                <h5 class="pt-3">اشتركتَ بنجاح في نشرة أخبار موقع د. دربال. بإذنه تعالى، ستصلك إشعارات الموضوعات الجديدة عبر حسابك على فيسبوك والبريد الإلكتروني.</h5>
-              </div>
+            <div class="modal-content rounded-0">
+                <div class="btnColse text-start ">
+                    <button type="button" class="btn-close m-0 p-3 btnColseModal" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-5">
+                    <h1 class="text-gold3 fw-normal">شكرًا</h1>
+                    <h5 class="pt-3">اشتركتَ بنجاح في نشرة أخبار موقع د. دربال. بإذنه تعالى، ستصلك إشعارات الموضوعات
+                        الجديدة عبر حسابك على فيسبوك والبريد الإلكتروني.</h5>
+                </div>
             </div>
-          </div>
+        </div>
     </div>
 
     <!-- aos libriry -->
     <script src="js/aos.js"></script>
     <script>
         AOS.init();
-              // zoom in  and zoom out
-              document.addEventListener("DOMContentLoaded", function () {
+        // zoom in  and zoom out
+        document.addEventListener("DOMContentLoaded", function () {
             const zoomValue = localStorage.getItem("zoomValue");
             if (zoomValue === "zoomed") {
                 zoomIn();
