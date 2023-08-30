@@ -470,7 +470,7 @@ body {
 .boxSearch form input::placeholder {
     font-size: 22px;
     padding: 10px;
-    color: white;
+    color: #413e3e !important;
 }
 
 .boxSearch form button {
