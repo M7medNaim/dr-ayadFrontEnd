@@ -207,6 +207,7 @@ main .accessibility {
     width: 40px;
     height: 40px;
     cursor: pointer;
+    z-index: 88;
 }
 
 .boxAccessibility {
@@ -391,7 +392,7 @@ main .card .card-body .textSlider {
 
 @media screen and (max-width:768px) {
     main {
-        min-height: 80vh !important;
+        min-height: 85vh !important;
     }
 
     .svgIcon {
@@ -1065,9 +1066,10 @@ footer.blog {
 
 }
 
-@media screen and (max-width:380px) {
+@media screen and (max-width:680px) {
     main.blog .content .types {
         position: relative;
+        bottom: -50px;
     }
 }
 
@@ -1443,11 +1445,8 @@ footer.islamyat {
 */
 main.books {
     background-image: url(../image/books/BO\ 1.png);
-    background-size: cover;
+    background-size: auto;
     min-height: 50vh !important;
-    background-position-y: -200px;
-    background-position-x: center;
-
 }
 
 main.books header.headHome i {

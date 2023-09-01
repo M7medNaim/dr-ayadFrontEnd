@@ -413,7 +413,7 @@ main .card .card-body .textSlider {
 
 @media screen and (max-width:768px) {
     main {
-        min-height: 80vh !important;
+        min-height: 85vh !important;
     }
 }
 
@@ -1090,9 +1090,10 @@ footer.blog {
 
 }
 
-@media screen and (max-width:380px) {
+@media screen and (max-width:680px) {
     main.blog .content .types {
         position: relative;
+        bottom: -50px;
     }
 }
 
@@ -1509,10 +1510,8 @@ footer.islamyat {
 */
 main.books {
     background-image: url(../image/books/BO\ 1.png);
-    background-size: cover;
+    background-size: auto;
     min-height: 50vh !important;
-    background-position-y: -200px;
-    background-position-x: center;
 
 }
 
@@ -2042,7 +2041,7 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--dark) !important;
     position: absolute;
     right: 40px;
-    top: 90px !important;
+    top: 97px !important;
 }
 
 .iconLinkSvg {
